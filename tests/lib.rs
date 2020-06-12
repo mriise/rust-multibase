@@ -145,8 +145,8 @@ fn case_insensitivity() {
         (Base32PadUpper, "Cnbswy3dpeB3W64TMMQ======"),
         (Base32HexPadLower, "td1imor3f41RMUSJCCG======"),
         (Base32HexPadUpper, "Td1imor3f41RMUSJCCG======"),
-        //(Base36Lower, "kfUvrsIvVnfRbjWaJo"),
-        //(Base36Upper, "KfUVrSIVVnFRbJWAJo"),
+        (Base36Lower, "kfUvrsIvVnfRbjWaJo"),
+        (Base36Upper, "KfUVrSIVVnFRbJWAJo"),
     ];
     for (base, output) in test_cases {
         assert_eq!(decode(output).unwrap(), (base, input.to_vec()));
