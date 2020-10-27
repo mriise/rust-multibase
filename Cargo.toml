@@ -13,7 +13,7 @@ keywords = ["ipld", "ipfs", "multihash", "multibase", "cid"]
 [dependencies]
 base-x = { git = "https://github.com/whalelephant/base-x-rs", branch = "no_std", default-features = false }
 data-encoding = { version = "2.3", default-features = false, features = ["alloc"] }
-lazy_static = { features = ["spin_no_std"], version = "1.4.0" }
+data-encoding-macro = { version = "0.1.8", default-features = false }
 
 [dev-dependencies]
 criterion = "0.3"

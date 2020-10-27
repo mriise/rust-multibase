@@ -6,6 +6,8 @@
 
 #[cfg(not(feature = "std"))]
 extern crate alloc;
+#[cfg(not(feature = "std"))]
+extern crate data_encoding_macro;
 
 mod base;
 mod encoding;
